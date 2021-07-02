@@ -1,6 +1,8 @@
-<div>El candidato seleccionado es: {{ elected.name }}</div>
-
+<!--<div>El candidato seleccionado es: {{ elected.name }}</div>-->
 <div class="content">
+  <div fxLayoutAlign="center">
+    <h1>TARJETÓN PERSONERO</h1>
+  </div>
   <mat-radio-group fxLayout="row wrap" fxLayoutGap="16px grid" [(ngModel)]="elected">
     <div fxFlex="25%" fxFlex.xs="100%" fxFlex.sm="33%" *ngFor="let c of candidates">
       <label>
@@ -16,4 +18,7 @@
       </label>
     </div>
   </mat-radio-group>
+  <div class="button-container" fxLayout="row" fxLayoutAlign="center">
+    <button mat-raised-button color="warn" (click)="onVote()">VOTAR</button>
+  </div>
 </div>

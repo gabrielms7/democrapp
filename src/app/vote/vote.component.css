@@ -12,7 +12,7 @@ mat-card {
 }
 
 .selected-card {
-  background-color: #c1d3fe;
+  background-color: #e9ecef;
   box-shadow: 0 8px 8px 8px rgba(0,0,0,.2), 0 8px 8px 0 rgba(0,0,0,.14), 0 8px 8px 0 rgba(0,0,0,.12) !important;
   transform: translate3d(0,0,0);
   transition: background .4s cubic-bezier(.25,.8,.25,1),box-shadow 280ms cubic-bezier(.4,0,.2,1);
@@ -21,4 +21,8 @@ mat-card {
 .card-header-img {
   background-image: url('../../assets/images/vote_icon.png');
   background-size: cover;
+}
+
+.button-container {
+  margin: 32px;
 }
